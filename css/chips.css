@@ -1,0 +1,125 @@
+.chips-row {
+  position: relative;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding-left: 105px;
+  padding-right: 15px;
+}
+
+.chips-list {
+  --fade-left: 0px;
+  --fade-right: 0px;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black var(--fade-left),
+    black calc(100% - var(--fade-right)),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black var(--fade-left),
+    black calc(100% - var(--fade-right)),
+    transparent 100%
+  );
+}
+.chips-list::-webkit-scrollbar {
+  display: none;
+}
+.chips-list-fade-left {
+  --fade-left: 55px;
+}
+.chips-list-fade-right {
+  --fade-right: 55px;
+}
+
+.chip {
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
+  color: rgb(15, 15, 15);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.chip:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.chip-active,
+.chip-active:hover {
+  background-color: rgb(15, 15, 15);
+  border-color: rgb(15, 15, 15);
+  color: white;
+}
+
+.chips-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 55px;
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 24px;
+  color: rgb(15, 15, 15);
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.chips-arrow-left {
+  left: 105px;
+  justify-content: flex-start;
+}
+.chips-arrow-right {
+  right: 15px;
+  justify-content: flex-end;
+}
+.chips-arrow span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 20px;
+  transition: background-color 0.15s;
+}
+.chips-arrow:hover span {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.chips-arrow-hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .chips-row {
+    height: 48px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .chips-arrow {
+    display: none !important;
+  }
+  .chips-list {
+    --fade-left: 0px !important;
+    --fade-right: 0px !important;
+  }
+}
