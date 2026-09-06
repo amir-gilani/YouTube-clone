@@ -177,3 +177,8 @@
 .theme-dark .nav-item img:not(.nav-item-picture) {
   filter: invert(1) hue-rotate(180deg);
 }
+
+.theme-dark .tolltip {
+  background-color: rgb(85, 85, 85);
+  color: rgb(241, 241, 241);
+}
