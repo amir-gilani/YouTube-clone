@@ -123,3 +123,16 @@
     --fade-right: 0px !important;
   }
 }
+
+.chips-row {
+  transition: padding-left 0.2s ease;
+}
+.chips-arrow-left {
+  transition: left 0.2s ease;
+}
+.sidebar-open .chips-row {
+  padding-left: 270px;
+}
+.sidebar-open .chips-arrow-left {
+  left: 270px;
+}
