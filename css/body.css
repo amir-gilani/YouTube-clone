@@ -89,8 +89,12 @@
     padding-bottom: 70px !important;
   }
 
+  .header::after {
+    left: 0;
+  }
+
   .header {
-    background-color: white !important;
+    background-color: white;
     z-index: 800;
   }
 
@@ -120,6 +124,7 @@
   .video-grid {
     display: grid !important;
     grid-template-columns: 1fr !important;
+    margin: 0 !important;
     padding: 0 !important;
     row-gap: 0 !important;
   }
