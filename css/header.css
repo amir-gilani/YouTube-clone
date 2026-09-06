@@ -168,6 +168,7 @@
 .current-user-picture {
   height: 32px;
   border-radius: 16px;
+  cursor: pointer;
 }
 .notifications-icon-counter {
   width: 12px;
@@ -257,4 +258,105 @@
   font-family: Roboto, arial;
   font-size: 14px;
   white-space: nowrap;
+}
+
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.profile-menu {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  width: 300px;
+  max-height: 75vh;
+  overflow-y: auto;
+  padding-bottom: 8px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 5;
+}
+.profile-open .profile-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.profile-menu-head {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+.profile-menu-avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.profile-menu-identity p {
+  font-family: Roboto, arial;
+}
+.profile-menu-name {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.profile-menu-handle {
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+  margin-bottom: 8px;
+}
+.profile-menu-link {
+  font-size: 14px;
+  color: rgb(6, 95, 212);
+  cursor: pointer;
+}
+
+.profile-menu-section {
+  padding: 8px 0;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+.profile-menu-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.profile-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  height: 40px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+.profile-item:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.profile-item > img:first-child {
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+}
+.profile-item span {
+  font-family: Roboto, arial;
+  font-size: 14px;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.profile-item-chevron {
+  height: 18px;
+  width: 18px;
+  flex-shrink: 0;
+  opacity: 0.55;
 }
