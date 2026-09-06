@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/body.css">
   <link rel="stylesheet" href="css/chips.css">
   <link rel="stylesheet" href="css/shorts.css">
+  <link rel="stylesheet" href="css/dark.css">
 
 </head>
 
@@ -78,6 +79,7 @@
         <div class="profile-wrapper">
           <img class="current-user-picture" src="channel-pictures/my-channel-picture.jpg">
           <div class="profile-menu">
+            <div class="profile-menu-main">
             <div class="profile-menu-head">
               <img class="profile-menu-avatar" src="channel-pictures/my-channel-picture.jpg">
               <div class="profile-menu-identity">
@@ -119,7 +121,7 @@
                 <img src="icons/your-data.svg">
                 <span> Your data in YouTube </span>
               </div>
-              <div class="profile-item">
+              <div class="profile-item profile-item-appearance">
                 <img src="icons/appearance.svg">
                 <span> Appearance: Device theme </span>
                 <img class="profile-item-chevron" src="icons/chevron-right.svg">
@@ -160,6 +162,29 @@
               <div class="profile-item">
                 <img src="icons/feedback.svg">
                 <span> Send feedback </span>
+              </div>
+            </div>
+            </div>
+
+            <div class="profile-panel">
+              <div class="profile-panel-head">
+                <img class="profile-panel-back" src="icons/chevron-left.svg">
+                <span> Appearance </span>
+              </div>
+              <p class="profile-panel-note">
+                Setting applies to this browser only
+              </p>
+              <div class="theme-option" data-theme="device">
+                <img class="theme-option-check" src="icons/check.svg">
+                <span> Use device theme </span>
+              </div>
+              <div class="theme-option" data-theme="dark">
+                <img class="theme-option-check" src="icons/check.svg">
+                <span> Dark theme </span>
+              </div>
+              <div class="theme-option" data-theme="light">
+                <img class="theme-option-check" src="icons/check.svg">
+                <span> Light theme </span>
               </div>
             </div>
           </div>
@@ -699,6 +724,7 @@
   <script src="js/sidebar.js"></script>
   <script src="js/create.js"></script>
   <script src="js/profile.js"></script>
+  <script src="js/theme.js"></script>
 </body>
 
 </html>

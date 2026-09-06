@@ -1,0 +1,179 @@
+.theme-dark {
+  color-scheme: dark;
+  background-color: rgb(15, 15, 15);
+  color: rgb(241, 241, 241);
+}
+.theme-dark::-webkit-scrollbar {
+  width: 12px;
+}
+.theme-dark::-webkit-scrollbar-track {
+  background-color: rgb(15, 15, 15);
+}
+.theme-dark::-webkit-scrollbar-thumb {
+  background-color: rgb(85, 85, 85);
+  border-radius: 6px;
+  border: 3px solid rgb(15, 15, 15);
+}
+.theme-dark::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(115, 115, 115);
+}
+
+.theme-dark .header {
+  background-color: rgba(15, 15, 15, 0.9);
+}
+.theme-dark .header::after {
+  background-color: rgb(48, 48, 48);
+}
+.theme-dark .search-bar {
+  background-color: rgb(18, 18, 18);
+  border-color: rgb(48, 48, 48);
+  color: rgb(241, 241, 241);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.theme-dark .search-bar::placeholder {
+  color: rgb(136, 136, 136);
+}
+.theme-dark .search-bar:focus {
+  border-color: rgb(62, 166, 255);
+}
+.theme-dark .search-button {
+  background-color: rgb(34, 34, 34);
+  border-color: rgb(48, 48, 48);
+}
+.theme-dark .search-button:hover {
+  background-color: rgb(55, 55, 55);
+}
+.theme-dark .voice-search-button {
+  background-color: rgb(38, 38, 38);
+}
+.theme-dark .hamburger-menu:hover,
+.theme-dark .notifications-icon:hover,
+.theme-dark .search-icon-mobile:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.theme-dark .crative-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgb(241, 241, 241);
+}
+.theme-dark .crative-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-dark .chip {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: rgb(241, 241, 241);
+}
+.theme-dark .chip:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.theme-dark .chip-active,
+.theme-dark .chip-active:hover {
+  background-color: rgb(241, 241, 241);
+  border-color: rgb(241, 241, 241);
+  color: rgb(15, 15, 15);
+}
+.theme-dark .chips-arrow {
+  color: rgb(241, 241, 241);
+}
+.theme-dark .chips-arrow:hover span {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-dark .sidebar {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 66px,
+    rgb(15, 15, 15) 66px
+  );
+}
+.theme-dark .sidebar:hover,
+.theme-dark .profile-menu:hover {
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+.theme-dark .sidebar::-webkit-scrollbar-track,
+.theme-dark .profile-menu::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.theme-dark .sidebar:hover::-webkit-scrollbar-thumb,
+.theme-dark .profile-menu:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.theme-dark .mini-item:hover,
+.theme-dark .guide-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.theme-dark .mini-item-active,
+.theme-dark .guide-item-active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.theme-dark .guide-section {
+  border-bottom-color: rgb(48, 48, 48);
+}
+.theme-dark .guide-footer {
+  color: rgb(170, 170, 170);
+}
+.theme-dark .guide-footer .guide-copyright {
+  color: rgb(114, 114, 114);
+}
+
+.theme-dark .video-author,
+.theme-dark .video-stats,
+.theme-dark .short-views {
+  color: rgb(170, 170, 170);
+}
+.theme-dark .video-author:hover {
+  color: rgb(241, 241, 241);
+}
+.theme-dark .shorts-header-menu:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-dark .under-creative-button,
+.theme-dark .profile-menu {
+  background-color: rgb(40, 40, 40);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.5);
+}
+.theme-dark .upload-div:hover,
+.theme-dark .profile-item:hover,
+.theme-dark .theme-option:hover,
+.theme-dark .profile-panel-back:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.theme-dark .profile-menu-head,
+.theme-dark .profile-menu-section,
+.theme-dark .profile-panel-head {
+  border-color: rgb(63, 63, 63);
+}
+.theme-dark .profile-menu-handle,
+.theme-dark .profile-panel-note {
+  color: rgb(170, 170, 170);
+}
+.theme-dark .profile-menu-link {
+  color: rgb(62, 166, 255);
+}
+
+.theme-dark .bottom-nav {
+  background-color: rgba(15, 15, 15, 0.85) !important;
+  border-top-color: rgb(48, 48, 48);
+}
+
+.theme-dark .hamburger-menu,
+.theme-dark .youtube-logo,
+.theme-dark .search-icon,
+.theme-dark .voice-search-icon,
+.theme-dark .notifications-icon,
+.theme-dark .search-icon-mobile,
+.theme-dark .shorts-header-icon,
+.theme-dark .shorts-header-menu,
+.theme-dark .mini-item img,
+.theme-dark .guide-title img,
+.theme-dark .guide-item > img:not(.guide-avatar),
+.theme-dark .upload-div img,
+.theme-dark .profile-item img,
+.theme-dark .profile-panel-back,
+.theme-dark .theme-option-check,
+.theme-dark .nav-item img:not(.nav-item-picture) {
+  filter: invert(1) hue-rotate(180deg);
+}

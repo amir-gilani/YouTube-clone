@@ -12,6 +12,7 @@ document.querySelector('.profile-menu').addEventListener('click', (event) => {
 
 document.addEventListener('click', () => {
   document.body.classList.remove('profile-open');
+  document.body.classList.remove('appearance-open');
 });
 
 document.addEventListener('keydown', (event) => {
