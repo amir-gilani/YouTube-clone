@@ -4,13 +4,15 @@ A responsive clone of the YouTube home page, built from scratch with plain **HTM
 
 The goal of this project is to rebuild a real, complex UI pixel by pixel and make every part of it actually work: the menus open, the theme switches and persists, the category chips scroll, and the whole layout adapts from desktop down to phone.
 
+## Preview
+
+![YouTube clone in dark and light theme](screenshots/preview.jpg)
+
+*The same home page in dark theme (top) and light theme (bottom).*
+
 ## Demo
 
-<!-- Add a screen recording of the site here -->
-
-## Screenshots
-
-<!-- Add screenshots of the site here (light theme / dark theme / mobile) -->
+<!-- Drag & drop the screen recording onto the GitHub README editor, then paste the generated link on its own line below -->
 
 ## Features
 
@@ -54,6 +56,7 @@ YouTube-clone/
 │   ├── profile.js             # account menu
 │   └── theme.js               # theme switching + persistence
 ├── icons/                     # SVG / PNG icons
+├── screenshots/               # preview images used in this README
 ├── thumbnails/                # video thumbnails
 └── channel-pictures/          # channel avatars
 ```
