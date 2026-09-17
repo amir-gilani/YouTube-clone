@@ -1,5 +1,6 @@
 
 
+
 # YouTube Clone
 
 A responsive clone of the YouTube home page, built from scratch with plain **HTML**, **CSS**, and **vanilla JavaScript** — no frameworks, no build step, no dependencies.
@@ -13,7 +14,7 @@ The goal of this project is to rebuild a real, complex UI pixel by pixel and mak
 *The home page in dark theme — sidebar guide, category chips, video grid and the Shorts row.*
 
 ## Demo
-![demo](https://github.com/user-attachments/assets/bb2a2521-4823-486b-a1e9-6284f3678487)
+<img width="800" height="360" alt="IMG_7326-ezgif com-video-to-gif-converter (2)" src="https://github.com/user-attachments/assets/6c25340f-a75b-400a-a729-aea3185901f7" />
 
 ## Features
 
