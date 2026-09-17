@@ -6,9 +6,9 @@ The goal of this project is to rebuild a real, complex UI pixel by pixel and mak
 
 ## Preview
 
-![YouTube clone in dark and light theme](screenshots/preview.jpg)
+![YouTube clone home page](screenshots/preview.png)
 
-*The same home page in dark theme (top) and light theme (bottom).*
+*The home page in dark theme — sidebar guide, category chips, video grid and the Shorts row.*
 
 ## Demo
 
